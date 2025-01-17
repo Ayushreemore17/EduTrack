@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="student.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+    <header>
+        <div class="logo" title="EduTrack">
+            
+            <h2>Edu<span class="danger">Track</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="video.html">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Lectures</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>USER</b> </p>
+                        <small class="text-muted">12102030</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTech. Information Technology</p>
+                    <h5>DOB</h5>
+                    <p>00-JAN-2004</p>
+                    <h5>Contact</h5>
+                    <p>1234567890</p>
+                    <h5>Email</h5>
+                    <p>user@gmail.com</p>
+                    <h5>Address</h5>
+                    <p> Mumbai, Maharashtra</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>SUBJECTS</h1>
+            <div class="subjects">
+                <div class="eg">
+                    <span class="material-icons-sharp">architecture</span>
+                    <h3>INTERNET PROGRAMMING</h3>
+                    
+                </div>
+                <div class="mth">
+                    <span class="material-icons-sharp">functions</span>
+                    <h3>COMPUTER NETWORK AND SECURITY</h3>
+                    
+                </div>
+                <div class="cs">
+                    <span class="material-icons-sharp">computer</span>
+                    <h3>SOFTWARE ENGINEERING</h3>
+                    
+                </div>
+                <div class="cg">
+                    <span class="material-icons-sharp">dns</span>
+                    <h3>ADVANCE DSA</h3>
+                    
+                </div>
+                <div class="net">
+                    <span class="material-icons-sharp">router</span>
+                    <h3>EEB</h3>
+                    
+                </div>
+                <div class="net">
+                    
+                    <span class="fa-brands fa-slack"></span>
+                    <h3>PCE</h3>
+                    
+                </div>
+                <div class="cg">
+                    <span class="fa-brands fa-drupal"></span>
+                    <h3>DEVOPS LAB</h3>
+                    
+                </div>
+                <div class="cs">
+                    <span class="fa-brands fa-cloudflare"></span>
+                    <h3>ADV.DEVOPS LAB</h3>
+                   
+                </div>
+                <div class="cg">
+                    <span class="fa-brands fa-codepen"></span>
+                    <h3>SL LAB</h3>
+                    
+                </div>
+                <div class="net">
+                    <span class="fa-brands fa-html5"></span>
+                    <h3>IP LAB</h3>
+                   
+                </div>
+            </div>
+
+            
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Academic</b> Be Prepared for the surprice test for Upcoming IAT2</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Assignments</b> Get Your Assignments Checked by Today Itself</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-Curricurum</b> Be Prepared For Upcoming Meta-Summit 2024.</p>
+                        <small class="text-muted">Yesterday</small>
+                    </div>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </div>
+
+   
+</body>
+</html>

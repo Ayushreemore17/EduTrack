@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Dashboard</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/logo.png">
+        <link rel="stylesheet" href="video.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Edu<span class="danger">Track</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="student.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" >
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="video.html" class="active" onclick="examTableAll()">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Lectures</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+
+    <main>
+        <h1>SUBJECTS</h1>
+        <div class="subjects">
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="ip.html"><h3>INTERNET PROGRAMMING</h3></a>
+            </div>
+
+            <div class="mth">
+                <span class="material-icons-sharp">functions</span>
+                <a href="cns.html"><h3>COMPUTER NETWORK SECURITY</h3></a>
+            </div>
+
+            <div class="cs">
+                <span class="material-icons-sharp">computer</span>
+                <a href="se.html"><h3>SOFTWARE ENGINEERING</h3></a>
+            </div>
+
+            <div class="cg">
+                <span class="material-icons-sharp">dns</span>
+                <a href="adsa.html"><h3>ADVANCE DSA</h3></a>
+            </div>
+
+        
+
+           
+            
+        </div>
+
+        
+    </main>
+</body>
+</html>

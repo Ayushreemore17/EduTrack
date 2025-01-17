@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Edu<span class="danger">Track</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="student.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" class="active" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="video.html">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Lectures</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+
+    <main style="margin: 0 ;" >
+        <div class="timetable active" id="timetable">
+            <div>
+                <span id="prevDay">&lt;</span>
+                <h2> TIMETABLE (SEM-5)</h2>
+                <span id="nextDay">&gt;</span>
+            </div>
+            <table >
+                <caption>TIME TABLE</caption>
+                <tr>
+                    <th>Day/Period</th>
+                    <th>I<br>9:15-10:15</th>
+                    <th>II<br>10:15-11.15</th>
+                    <th>III<br>11.15-12:15</th>
+                    <th>12:15-12:45</th>
+                    <th>IV<br>12:45-1:45</th>
+                    <th>V <br>1:45-2:45</th>
+                    <th>VI <br>2:45-3:45</th>
+                    <th>VII <br>3:45-4:45</th>
+                </tr>
+                <tr>
+                    <td class="Data">Monday</td>
+                    <td>IP</td>
+                    <td colspan="2">PCE</td>
+                    <td rowspan="5">Lunch</td>
+                    <td>SE</td>
+                    <td >LIB</td>
+                    <td colspan="2">Major Minor</td>
+                </tr>
+        
+                <tr>
+                    <td class="Data">TUESDAY</td>
+                    <td >CNS</td>
+                    <td>SE</td>
+                    <td>EEB</td>
+                    <td colspan="2">Adv.Devops</td>
+                    <td colspan="2">Miniproject</td>
+                </tr>
+        
+                <tr>
+                    <td class="Data">Wednesday</td>
+                    <td>IP</td>
+                    <td>ADSA</td>
+                    <td>CNS</td>
+                    <td colspan="2">Devops</td>
+                    <td>PCE</td>
+                    <td>EEB</td>
+                </tr>
+        
+                <tr>
+                    <td class="Data">Thursday</td>
+                    <td colspan="2">IP</td>
+                    <td>SE</td>
+                    <td>EEB</td>
+                    <td>CNS</td>
+                    <td>ADSA</td>
+                    <td>Activity hour</td>
+                </tr>
+        
+                <tr>
+                    <td class="Data">Friday</td>
+                    <td>PCE</td>
+                    <td>ADSA</td>
+                    <td>IP</td>
+                    <td colspan="2">SL</td>
+                    <td colspan="2">Mini project</td>
+                </tr>
+        
+            </table>
+        </div>
+    </main>
+
+</body>
+
+<script src="timeTable.js"></script>
+<script src="app.js"></script>
+</html>

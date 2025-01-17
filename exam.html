@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Edu<span class="danger">Track</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="student.html" >
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" >
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html" class="active" onclick="examTableAll()">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="video.html">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Lectures</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+
+    <main style="margin: 0 ;" >
+        <div class="timetable active" id="timetable">
+            <div>
+                <span id="prevDay">&lt;</span>
+                <h2> EXAMINATION TIME TABLE SEM 5</h2>
+                <span id="nextDay">&gt;</span>
+            </div>
+            <table >
+                <caption>PROGRAMME - T.E (Information Technology) (Choice Based) (R-19 'C' Scheme)</caption>
+                <tr>
+                    <th>Days/Date</th>
+                    <th>TIME</th>
+                    <th>Paper Code</th>
+                    <th>Paper</th>
+                   
+                </tr>
+                <tr>
+                    <td class="Data">Monday, 11 November, 2024</td>
+                    <td>2:30pm - 5:30pm</td>
+                    <td >32421</td>
+                    <td>INTERNET PROGRAMMING</td>
+                </tr>
+
+                <tr>
+                    <td class="Data">Wednesday, 13 November, 2024</td>
+                    <td>2:30pm - 5:30pm</td>
+                    <td >32422</td>
+                    <td>Computer Network and Security</td>
+                </tr>
+
+                <tr>
+                    <td class="Data">Monday, 18 November, 2024</td>
+                    <td>2:30pm - 5:30pm</td>
+                    <td >32423</td>
+                    <td>Enterpreneurship And E-Business</td>
+                </tr>
+
+                <tr>
+                    <td class="Data">Wednesday, 20 November, 2024</td>
+                    <td>2:30pm - 5:30pm</td>
+                    <td >32424</td>
+                    <td>Software Engineering</td>
+                </tr>
+
+                <tr>
+                    <td class="Data">Monday, 25 November, 2024</td>
+                    <td>2:30pm - 5:30pm</td>
+                    <td >32425</td>
+                    <td>Advance Data Structure and Analysis</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+<script src="timeTable.js"></script>
+<script src="app.js"></script>
+</html>

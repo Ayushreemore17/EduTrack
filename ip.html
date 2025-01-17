@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Dashboard</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <link rel="shortcut icon" href="./images/logo.png">
+        <link rel="stylesheet" href="video.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Edu<span class="danger">Track</span></h2>
+        </div>
+        <div class="navbar">
+            <a href="student.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" >
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="video.html" class="active" onclick="examTableAll()">
+                <i class="fa-solid fa-video"></i>
+                <h3>Video Lectures</h3>
+            </a>
+            <a href="home.html">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+
+    <main>
+        <h1>SUBJECTS</h1>
+        <div class="subjects">
+            
+
+            <!-- WEB PROGRAMMIN FUNDAMENTALS -->
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=32Pea78eY7k"><h3>WORKING OF WEB BROWSER</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=qcALGDn0zpk"><h3>HTTP PROTOCOL</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=JkEYOt08-rU"><h3>DNS</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=BAHpbig3Liw"><h3>JASON INTRODUCTION</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=1JblVElt5K0&list=PLhW3qG5bs-L9DloLUPwC3GdFimY5Ce_gS"><h3>XML</h3></a>
+            </div>
+
+
+            <!-- JAVASCRIPT -->
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=VFRWqZqpqiw"><h3>INTRODUCTION TO ES6</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=a_gwOwkbhZ0"><h3>FUNCTION IN JAVASCRIPT</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=7xgJmIOG8GE"><h3>LOOPS IN JAVASCRIPT</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=9loYq8W8rsg"><h3>CLASSES AND INHERITANCE IN JAVASCRIPT</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=Dadlf6YsTHA"><h3>PROMISE</h3></a>
+            </div>
+
+            <!-- REACT -->
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=LX4JUscM9Sk"><h3>REACT INTRODUCTION</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=yPrcIFktnes"><h3>FOLDER AND FILE STRUCTURE IN REACT</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=zvM_FUVcB-0"><h3>COMPONENT LIFECYCLE</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=UWYOC8g5N_0&list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrGX"><h3>REACT ROUTER</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=uUbTd-lALjc"><h3>STATE AND PROPS</h3></a>
+            </div>
+
+
+            <!-- node -->
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=Rv6zoDZBmBI"><h3>ASYNCHRONOUS AND CALL BY CONCEPT</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=OWoHVv16ThY"><h3>REPL</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=FSRo41TaHFU"><h3>WEB MODULE</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=br8VB99qPzE"><h3>STREAMS AND BUFFERS</h3></a>
+            </div>
+
+            <div class="eg">
+                <span class="material-icons-sharp">architecture</span>
+                <a href="https://www.youtube.com/watch?v=cJAyEOZQUQY"><h3>REST API</h3></a>
+            </div>
+
+            
+
+            
+        </div>
+
+        
+    </main>
+</body>
+</html>
